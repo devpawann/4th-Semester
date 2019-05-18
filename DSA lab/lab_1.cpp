@@ -1,7 +1,7 @@
 ////Implementation of stack using array(top varying /bottom fixed)
 #include<stdio.h>
 #include<stdlib.h>
-#define maxsize 2
+#define maxsize 3
 int stack[maxsize];
 int tos=-1;
 
@@ -27,7 +27,6 @@ int pop(){
 int display(){
 	int n;
 	printf("Elements of stack are:\n");
-	fflush(stdin);
 	for(n=tos;n>=0;n--){
 		printf("%d\n",stack[n]);
 		}

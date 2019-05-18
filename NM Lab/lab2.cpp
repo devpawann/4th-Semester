@@ -14,13 +14,10 @@ int main(){
 	cout.width(4);
 	cout<<"X0";
 	cout.width(8);
-	cout.precision(4);
 	cout<<"f(X0)";
 	cout.width(12);
-	cout.precision(4);
 	cout<<"f'(x0)";
 	cout.width(12);
-	cout.precision(4);
 	cout<<"x1"<<endl;
 	int count=0;
 	do{
