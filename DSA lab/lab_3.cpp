@@ -8,7 +8,7 @@ int front=0;
 int rear=-1;
 
 int enqueue(){
-	int num;													//tos==rear
+	int num;												
 	if(rear==(maxsize-1)){
 		printf("Queue is full");
 	}else{
@@ -23,13 +23,14 @@ int dequeue(){
 		printf("Queue is empty\n");
 	}else{
 		printf("Dequeued: %d\n",queue[front++]);
+		
 	}
 }
 
 int display(){
 	int n;
 	printf("Elements of queue are:\n");
-	for(n=rear;n>=0;n--){
+	for(n=front;n<=(rear);n++){
 		printf("%d\n",queue[n]);
 		}
 	}
@@ -63,7 +64,7 @@ int main(){
 
 
 
-
+//Completed
 
 
 

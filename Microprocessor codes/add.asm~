@@ -1,0 +1,3 @@
+LDA 3109H
+STA 310AH
+hlt

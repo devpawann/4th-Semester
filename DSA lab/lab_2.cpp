@@ -16,6 +16,7 @@ int push(){
 		scanf("%d",&data);
 		stack[0]=data;
 		bos++;
+		printf("BOS is %d",bos);
 	}
 }
 

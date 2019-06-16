@@ -1,0 +1,11 @@
+LXI H,3100H
+MVI C,0AH
+MVI A,00H
+up: CMP M
+JNC down
+MOV A,M
+down: DCR C
+INX H
+JNZ up
+STA 3110H
+HLT
