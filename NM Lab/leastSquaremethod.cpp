@@ -14,19 +14,13 @@ int main(){
 	for(i=1;i<=n;i++){
 		cout<<"Y"<<i<<endl;
 		cin>>y[i];
-	}
-	for(i=1;i<=n;i++){
 		sumx+=x[i];
-	}
-	for(i=1;i<=n;i++){
 		sumy+=y[i];
-	}
-	for(i=1;i<=n;i++){
 		sumxy=sumxy+x[i]*y[i];
-	}
-	for(i=1;i<=n;i++){
 		sumx2=sumx2+x[i]*x[i];
 	}
+	
+
 	b=(n*sumxy-sumx*sumy)/(n*sumx2-sumx*sumx);
 	a=(sumy/n - ((b*sumx)/n));
 	cout<<"Required eqn is"<<endl;
