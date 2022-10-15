@@ -4,7 +4,7 @@
 using namespace std;
 int main(){
 	int y,z,n,i,j,k;
-	float A[10][10],x[10],C;
+	float A[10][10],x[10]={0},C;
 	cout<<"Enter the size of matrix"<<endl;
 	cin>>n;
 	
@@ -18,7 +18,7 @@ int main(){
 	
 	for(int j=1;j<=n;j++){
 		for(int i=1;i<=n;i++){
-			if(i>j){
+			if(i>=j){
 				C=A[i][j]/A[j][j];}
 				for(int k=1;k<=(n+1);k++){
 					A[i][k]=A[i][k]-C*A[j][k];

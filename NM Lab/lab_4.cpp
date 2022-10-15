@@ -4,7 +4,7 @@
 using namespace std;
 int main(){
 	int n,i,j,k;
-	float A[10][10],x[10],c,a;
+	float A[10][10],x[10]={0},c,a;
 	cout<<"Enter the no of unknown"<<endl;
 	cin>>n;
 	cout<<"Enter elements"<<endl;

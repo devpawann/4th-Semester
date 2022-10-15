@@ -50,7 +50,7 @@ int dequeue(){
 int display(){
 int i;
 if(front==-1){
-	printf("Stack is empty\n");
+	printf("queue is empty\n");
 }else{
 	if(front<rear){
 		//Display for pure linear queue

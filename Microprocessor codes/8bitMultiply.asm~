@@ -1,0 +1,20 @@
+;Multiply two 8 bit number
+LXI H,3100H
+MOV B,M
+INX H
+MOV C,M
+MVI A,00H
+MVI E,00H
+UP: ADD B
+JNC SKIP
+INR E
+SKIP: DCR C
+JNZ UP
+STA 3105H
+MOV A,E
+STA 3106H
+HLT
+
+;#org 3100h
+;#db ffh,ffh
+;correct

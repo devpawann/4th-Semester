@@ -3,7 +3,7 @@
 #include<iomanip>
 #include<conio.h>
 using namespace std;
-#define f(x) (x*x*x-4*x+1)
+#define f(x) (exp(x)-3*x)
 #define err 0.001
 int main(){
 	float x1,x2,xm;

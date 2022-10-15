@@ -1,0 +1,15 @@
+;Block exchange program
+LXI B,2000H
+LXI D,3000H
+MVI L,05H
+UP: LDAX B
+MOV H,A
+LDAX D
+STAX B
+MOV A,H
+STAX D
+INX B
+INX D
+DCR L
+JNZ UP
+HLT

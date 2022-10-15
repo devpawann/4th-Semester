@@ -1,0 +1,24 @@
+;compare upper and lower nibble and count 
+LXI H,3000H
+MVI C,03H
+MVI B,00H
+UP: MOV A,M
+ANI 0FH
+MOV E,A
+MOV A,M
+RRC
+RRC
+RRC
+RRC
+ANI 0FH
+CMP E
+JC SKIP
+INR B
+SKIP: INX H
+DCR C
+JNZ UP
+MOV M,B
+HLT
+
+;#org 3000h
+;#db 10

@@ -1,0 +1,17 @@
+;Fibonacci
+LXI H,3000H
+MVI M,00H
+INX H
+MVI M,01H
+MVI C,08H
+UP: MOV A,M
+DCX H
+ADD M
+INX H
+INX H
+MOV M,A
+DCR C
+JNZ UP
+HLT
+;correct
+#org 3000

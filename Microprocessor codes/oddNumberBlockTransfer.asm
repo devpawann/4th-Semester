@@ -1,0 +1,21 @@
+LXI B,3000H
+LXI D,3100H
+MVI H,03H
+UP: LDAX B
+RRC
+JC SKIP
+RLC
+XRI 11H
+STAX D
+JMP move
+SKIP:RLC
+STAX D
+
+move: INX D
+INX B
+DCR H
+JNZ UP
+HLT
+;correct
+#org 3000h
+#db 05h,26h,07h

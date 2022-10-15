@@ -10,12 +10,14 @@ int rear=-1;
 int enqueue(){
 	int num;												
 	if(rear==(maxsize-1)){
-		printf("Queue is full");
+		printf("Queue is full\n");
 	}else{
 		printf("Enter element to enqueue\n");
 		scanf("%d",&num);
 		queue[++rear]=num;
 		printf("Enqueued: %d\n", queue[rear]);	
+		printf("front= %d, Rear= %d\n",front,rear);	
+		
 	}
 }
 int dequeue(){
@@ -23,6 +25,7 @@ int dequeue(){
 		printf("Queue is empty\n");
 	}else{
 		printf("Dequeued: %d\n",queue[front++]);
+		printf("front= %d, Rear= %d\n",front,rear);	
 		
 	}
 }
